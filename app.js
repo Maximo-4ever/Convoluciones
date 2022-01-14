@@ -1,4 +1,5 @@
 const image = new Image();
+const btn = document.querySelector(".btn")
 image.src = "https://thispersondoesnotexist.com/image";
 
 image.crossOrigin = "Anonymous";
@@ -80,3 +81,6 @@ const convolucionar = (canvasFuente, canvasDestino) => {
 };
 
 image.onload = imageLoaded;
+btn.addEventListener("click", () => {
+  location.reload();
+})
